@@ -10,7 +10,9 @@
 </head>
 <body>
   <div id="app">
-    <li v-for="(email, index) in emails"> {{ email[index].emails }}</li>
+    <ul v-for="email in emails">
+      <li> {{ email.emails }} </li>
+    </ul>
 
   </div>
   <script src="js/script.js"></script>
