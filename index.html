@@ -10,9 +10,12 @@
 </head>
 <body>
   <div id="app">
-    <ul v-for="email in emails">
-      <li> {{ email.emails }} </li>
-    </ul>
+    <button @click="generate()">Genera Emails</button>
+    <div>
+      <ul v-for="email in emails">
+        <li> {{ email }} </li>
+      </ul>
+    </div>
 
   </div>
   <script src="js/script.js"></script>
