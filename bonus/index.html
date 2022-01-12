@@ -12,8 +12,8 @@
   <div id="app">
     <button @click="generate()">Genera Emails</button>
     <div v-if="emails.length == 10">
-      <ul v-for="email in emails">
-        <li> {{ email }} </li>
+      <ul>
+        <li v-for="(email, index) in emails" :key="email + index"> {{ email }} </li>
       </ul>
     </div>
 
